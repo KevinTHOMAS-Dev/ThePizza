@@ -1,0 +1,11 @@
+h1, li{
+    color:blue;
+}
+
+body{
+    background: url("img/menu_background.jpg") center center fixed no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
