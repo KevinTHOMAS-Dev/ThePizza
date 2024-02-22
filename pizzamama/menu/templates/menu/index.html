@@ -8,13 +8,20 @@
 </head>
 <body>
     <img id="small_logo"  src="{% static 'menu/img/small_logo.png' %}">
-    <h1>Les pizzas</h1>
-<ul>
+    <div class="menu_title"><h1>Les pizzas</h1></div>
+<div class="menu_list">
+    <ul>
     {% for pizza in pizzas %}
     <li>
-        {{pizza.name}} : {{pizza.price}}
+        <div class="menu_list_item">
+            <span class="menu_list_title">{{pizza.name}}</span>
+            <span class="menu_list_price">{{pizza.price | floatformat:2}}$</span>
+            <br>
+            <span class="menu_list_ingredient">{{pizza.ingredients}}</span>
+        </div>
     </li>
     {% endfor %}
 </ul>
+</div>
 </body>
 </html>
