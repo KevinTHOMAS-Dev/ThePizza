@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link rel="stylesheet" href="{% static 'main/style.css'%}">
+</head>
+<body>
+    <div class="centered">
+            <img src="{% static 'main/img/main_logo.png' %}">
+        <a id="ref" href="{% url 'menu:index' %}"> Voir Menu</a>
+    </div>
+</body>
+</html>
